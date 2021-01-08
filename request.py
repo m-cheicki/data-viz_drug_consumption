@@ -9,5 +9,5 @@ person = [-0.07854, 0.48246, -1.43719, 0.96082, -0.31685,
 json = {'person': person}
 # to_predict = np.array(list(json.values())).astype(float)
 
-r = requests.get(url, params=json, headers=headers)
+r = requests.post(url, params=json, headers=headers)
 print(r.url)
