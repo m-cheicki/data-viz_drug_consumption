@@ -67,8 +67,8 @@ def crack():
     return jsonify(np.array2string(model.predict([request.get_json()['person']])))
 
 
-@app.route('/ectasy/', methods=["POST"])
-def ectasy():
+@app.route('/ecstasy/', methods=["POST"])
+def ecstasy():
     model = p.load(open('models/ECSTASY_CONSUMPTION_prediction.pickle', 'rb'))
     return jsonify(np.array2string(model.predict([request.get_json()['person']])))
 

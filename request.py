@@ -17,6 +17,7 @@ cannabis = 'http://localhost:5000/cannabis/'
 chocolate = 'http://localhost:5000/chocolate/'
 coke = 'http://localhost:5000/coke/'
 crack = 'http://localhost:5000/crack/'
+ecstasy = 'http://localhost:5000/ecstasy/'
 heroin = 'http://localhost:5000/heroin/'
 ketamine = 'http://localhost:5000/ketamine/'
 legal_highs = 'http://localhost:5000/legal-highs/'
@@ -28,10 +29,10 @@ semer = 'http://localhost:5000/semer/'
 vsa = 'http://localhost:5000/vsa/'
 
 drugs = [alcohol, amphet, amyl, benzos,
-         caffeine, cannabis, chocolate, coke, crack, heroin, ketamine,
+         caffeine, cannabis, chocolate, coke, crack, ecstasy, heroin, ketamine,
          legal_highs, lsd, magic_mushrooms, meth, nicotine, semer, vsa]
 
 
 for drug in drugs:
     r = requests.post(drug, data=j_data, headers=headers)
-    print(f"{drug[22:-1]} : " + r.text)
+    print(f"    {drug[22:-1]} : " + r.text)
