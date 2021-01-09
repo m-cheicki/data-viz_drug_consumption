@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Drug consumption dataset</title>
+    </head>
+    <body>
+        <h1>Python for data analysis</h1>
+        <h2>Drug consumption quantified dataset</h2>
+        <main>
+            <p>This project is about analysing the 
+                <a target="_target" href="https://archive.ics.uci.edu/ml/datasets/Drug+consumption+%28quantified%29">drug consumption dataset</a>. <br/>
+            The problem we wanted to solve is the <strong>seven-class classification problem for each drug. </strong></p>
+            <h3>List of all drugs of the dataset</h3>
+            <ul>
+                <li>alcohol</li>
+                <li>amphet</li>
+                <li>amyl</li>
+                <li>benzos</li>
+                <li>caffeine</li>
+                <li>cannabis</li>
+                <li>chocolate</li>
+                <li>coke</li>
+                <li>crack</li>
+                <li>heroin</li>
+                <li>ketamine</li>
+                <li>legal highs</li>
+                <li>LSD</li>
+                <li>magic mushrooms</li>
+                <li>meth</li>
+                <li>nicotine</li>
+                <li>semer</li>
+                <li>vsa</li>
+            </ul>
+            <h3>Possible classes and their meaning</h3>
+            <ul>
+                <li>CL0 : Never Used</li>
+                <li>CL1 : Used over a Decade Ago </li>
+                <li>CL2 : Used in Last Decade</li>
+                <li>CL3 : Used in Last Year</li>
+                <li>CL4 : Used in Last Month</li>
+                <li>CL5 : Used in Last Week</li>
+                <li>CL6 : Used in Last Day</li>
+            </ul>
+            <h3>How does it work ? </h3>
+            <p>
+                In the request.py file, you can give a person (with values specified in the dataset's website) : 
+                his age, gender, education level, country, ethnicity, personnality scores values (Nscore, Escore, Oscore, Ascore, Cscore), 
+                impulsiveness and sensation seeking. <br/>
+                Then, run <code>python request.py</code> 
+            </p>
+            <p>Unfortunately, right now, you cannot have the results on the browser. Its says <strong>405 - Method not allowed</strong></p>
+        </main>
+        <footer>
+            <span>Kévin Célié - Mariyam Cheick Ismail</span>
+            <span>
+                <a target="_blank" href="https://github.com/m-cheicki/data-viz_drug_consumption">Link to Github</a>
+            </span>
+            <span>ESILV - Python for Data Analysis | 2021</span>
+        </footer>
+    </body>
+    <style>
+
+        html,
+        body {
+            margin:0; 
+            padding:0;
+            font-family: sans-serif; 
+        }
+
+        h1{
+            color: #c90f50; 
+            text-align: center; 
+            padding: 0 0 24px 0; 
+        }
+
+        h2{
+            padding: 0 36px; 
+        }
+
+        h3{
+            padding: 0 60px; 
+        }
+
+        p{
+            padding: 0 24px; 
+            line-height: 24px;  
+        }
+
+        ul{
+            color : #c90f50;
+            text-transform: capitalize;
+            margin: 0 60px; 
+        }
+
+        footer{
+            margin: 64px 0 0 0; 
+            background: #efefef; 
+            height: 48px; 
+            width: 100%; 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center;
+        }
+    </style>
+</html>
