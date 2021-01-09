@@ -63,4 +63,5 @@ Paper above solve binary classification problem for all drugs. For most of drugs
 ## Purpose of the project
 
 Different possibilities of prediction were available to us, we chose to predict for a person when that person used a specific drug for the last time. We tried several methods of machine learning, SVC, Decision Tree, Random Forest and deep learning. Out of the first three, SVC and Random Forest showed better results than Decision Tree, without any tuning. So we focused on finding the best hyperparameters using gridSearch. After the use of gridSearch, the model chosen for the API was the Random Forest.
+
 The deep learning was used under another approach. With it, we tried to predict which drugs have been consumed in the last 24 hours for a person. To do so, it was necessary to process and transform the prediction columns to show 1's instead of CL6 and 0's otherwise. However, we did not manage to have an accuracy of more than 50% on the training data. The keras tuner was then used to try to get better parameters but without success.
